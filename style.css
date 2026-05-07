@@ -1,4 +1,4 @@
-/* 1. DEFINICIJA BOJA (Inžinjerski pristup - Centralizovano) */
+/* 1. DEFINICIJA BOJA (Centralizovano) */
 :root {
     --primary-color: #800000;    /* Maroon */
     --accent-color: #a93226;     /* Svjetlija crvena za interakciju */
@@ -6,13 +6,13 @@
     --text-color: #2c2c2c;       /* Tamno siva za tekst */
 }
 
-/* 2. OSNOVNI STIL (Ovdje definišemo da pozadina NIJE čisto bijela) */
+/* 2. OSNOVNI STIL */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color); /* Ovo "boji" cijelu stranicu */
+    background-color: var(--bg-color); /* cijela stranicu */
     color: var(--text-color);
 }
 
@@ -44,7 +44,7 @@ nav ul li a {
     font-size: 0.9rem;
 }
 
-/* 4. SEKCIJE (Kutije koje drže sadržaj) */
+/* 4. SEKCIJE */
 section {
     max-width: 800px;
     margin: 40px auto;
@@ -52,14 +52,14 @@ section {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border-left: 5px solid var(--primary-color); /* Inžinjerski detalj: crvena ivica sa strane */
+    border-left: 5px solid var(--primary-color); /* crvena ivica sa strane */
 }
 
 h1, h2 {
     color: var(--primary-color);
 }
 
-/* 5. TABELA (Strukturirani podaci) */
+/* 5. TABELA */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -104,4 +104,8 @@ button {
 
 button:hover {
     background: var(--accent-color);
+}
+tbody tr:hover {
+    background-color: #f2e6e6; /* Svijetlo maroon nijansa */
+    transition: 0.3s;
 }
