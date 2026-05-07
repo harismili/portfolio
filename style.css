@@ -109,3 +109,15 @@ tbody tr:hover {
     background-color: #f2e6e6; /* Svijetlo maroon nijansa */
     transition: 0.3s;
 }
+.project-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fffaf9; /* Blaga nijansa koja prati maroon temu */
+    margin-top: 15px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
