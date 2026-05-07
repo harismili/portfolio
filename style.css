@@ -1,0 +1,107 @@
+/* 1. DEFINICIJA BOJA (Inžinjerski pristup - Centralizovano) */
+:root {
+    --primary-color: #800000;    /* Maroon */
+    --accent-color: #a93226;     /* Svjetlija crvena za interakciju */
+    --bg-color: #fdfaf9;         /* Topla bijela */
+    --text-color: #2c2c2c;       /* Tamno siva za tekst */
+}
+
+/* 2. OSNOVNI STIL (Ovdje definišemo da pozadina NIJE čisto bijela) */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color); /* Ovo "boji" cijelu stranicu */
+    color: var(--text-color);
+}
+
+/* 3. HEADER (Zatamnjena maroon pozadina) */
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* 4. SEKCIJE (Kutije koje drže sadržaj) */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--primary-color); /* Inžinjerski detalj: crvena ivica sa strane */
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/* 5. TABELA (Strukturirani podaci) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 6. FORMA I DUGMAD */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease; /* Glatka promjena boje */
+}
+
+button:hover {
+    background: var(--accent-color);
+}

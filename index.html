@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ime i Prezime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">O meni</a></li>
+                <li><a href="#skills">Vještine</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Zdravo, ja sam student Inžinjerske informatike</h1>
+            <p>Fokusiran sam na razvoj softvera, analizu podataka i rješavanje kompleksnih problema kroz kod.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Tehničke vještine</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tehnologija/Vještina</th>
+                        <th>Nivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Napredni Excel (Logičke funkcije)</td>
+                        <td>Ekspert</td>
+                    </tr>
+                    <tr>
+                        <td>Dart & Flutter</td>
+                        <td>U učenju</td>
+                    </tr>
+                    <tr>
+                        <td>HTML5 & CSS3</td>
+                        <td>Osnovni</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Kontaktiraj me</h2>
+            <form>
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Pošalji</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Moj Portfolio</p>
+    </footer>
+
+</body>
+</html>
