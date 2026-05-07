@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth; 
+}
 /* 1. DEFINICIJA BOJA (Centralizovano) */
 :root {
     --primary-color: #800000;    /* Maroon */
