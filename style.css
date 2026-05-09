@@ -4,7 +4,7 @@ html {
 /* 1. DEFINICIJA BOJA (Centralizovano) */
 :root {
     --primary-color: #800000;    /* Maroon */
-    --accent-color: #a93226;     /* Svjetlija crvena za interakciju */
+    --accent-color: #a00000;     /* Svjetlija crvena za interakciju */
     --bg-color: #fdfaf9;         /* Topla bijela */
     --text-color: #2c2c2c;       /* Tamno siva za tekst */
 }
@@ -123,4 +123,37 @@ tbody tr:hover {
 .project-item h3 {
     margin-top: 0;
     color: var(--primary-color);
+}
+
+.project-item i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+table i {
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
+/* Stil za GitHub dugme */
+.btn-github {
+    display: inline-block;
+    background-color: #800000; /* maroon */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-github:hover {
+    background-color: #a00000; /* Svjetlija maroon na hover */
+    transform: translateY(-2px); /* Animacija prema gore */
+    color: white;
+}
+
+.btn-github i {
+    margin-right: 8px;
 }
