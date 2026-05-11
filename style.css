@@ -157,3 +157,33 @@ table i {
 .btn-github i {
     margin-right: 8px;
 }
+
+/* Specifična popravka samo za kontakt sekciju */
+#contact {
+    flex-direction: column; /* Naslov ide iznad forme */
+    align-items: flex-start; /* Sve poravnato ulijevo */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column; /* Elementi forme jedan ispod drugog */
+    width: 100%;
+    max-width: 600px; /* Da forma ne bude preširoka */
+    gap: 0.5rem; /* Razmak između labela i inputa */
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+#contact button {
+    align-self: flex-start; /* Dugme ostaje lijevo */
+    padding: 12px 30px;
+    width: auto;
+}
