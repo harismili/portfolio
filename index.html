@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Haris Milavica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -20,13 +20,18 @@
                 <li><a href="#projects">Projekti</a></li>
                 <li><a href="#skills">Vještine</a></li>
                 <li><a href="#contact">Kontakt</a></li>
-                <li><a href="https://github.com/harismili" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://github.com/harismili" target="_blank" aria-label="Moj GitHub profil"><i class="fab fa-github"></i></a></li>
+                <li>
+                    <button id="theme-toggle" type="button" aria-label="Prebaci na tamni mod">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-<section id="about">
+        <section id="about">
             <h1>Zdravo, ja sam Haris Milavica</h1>
             <p>Student sam Fakulteta za tehničke studije, smjer Inžinjerska informatika. Posvećen sam izučavanju softverskog inžinjerstva, analizi podataka i primjeni modernih tehnologija u rješavanju praktičnih problema.</p>
             <a href="https://github.com/harismili" target="_blank" class="btn-github">
@@ -37,13 +42,18 @@
         <section id="projects">
             <h2>Trenutni projekti</h2>
             <div class="project-item">
-                <h3>Softver za upravljanje i prikaz rezultata</h3>
-                <p><strong>Platforme:</strong> 
-                    <i class="fab fa-windows"></i> Windows & 
-                    <i class="fab fa-android"></i> Android 
+                <h3>LED Scoreboard by HM</h3>
+                <p><strong>Platforme:</strong>
+                    <i class="fab fa-windows"></i> Windows &
+                    <i class="fab fa-android"></i> Android
+                    <span class="project-version">v0.2.0-alpha</span>
                 </p>
-                <p>Razvoj specijalizovanog rješenja za dvoranske sportove. Fokus projekta je na preciznom praćenju rezultata u realnom vremenu, upravljanju sportskim događajima i optimizaciji prikaza za različite tipove ekrana.</p>
-                <p><em>Tehnologije: Dart & Flutter</em></p>
+                <p>Kros-platformsko rješenje za dvoranske sportove. Fokus projekta je na preciznom praćenju rezultata u realnom vremenu, upravljanju sportskim događajima i optimizaciji prikaza za različite tipove ekrana.</p>
+                <p><strong>Arhitektura:</strong> oslanja se na WebSockets za brzu i stabilnu komunikaciju između operaterskog uređaja i displeja.</p>
+                <p><em>Tehnologije: Dart & Flutter, WebSockets</em></p>
+                <a href="https://github.com/harismili" target="_blank" class="btn-github">
+                    <i class="fab fa-github"></i> Pogledaj na GitHub-u
+                </a>
             </div>
         </section>
 
@@ -57,30 +67,30 @@
                     </tr>
                 </thead>
                 <tbody>
-    <tr>
-        <td><i class="fas fa-certificate" style="color: #800000; margin-right: 8px;"></i> <strong>SIUS program (ISSF)</strong></td>
-        <td>Certificirani korisnik</td>
-    </tr>
-    <tr>
-        <td><i class="fas fa-file-excel" style="color: #217346; margin-right: 8px;"></i> Napredni Excel</td>
-        <td>Ekspert</td>
-    </tr>
-    <tr>
-        <td><i class="fas fa-mobile-alt" style="color: #02569B; margin-right: 8px;"></i> Dart & Flutter razvoj</td>
-        <td>U učenju</td>
-    </tr>
-    <tr>
-        <td><i class="fab fa-html5" style="color: #E34F26; margin-right: 8px;"></i> HTML5 & CSS3</td>
-        <td>Osnovni nivo</td>
-    </tr>
-</tbody>
+                    <tr>
+                        <td><i class="fas fa-certificate" style="color: #800000; margin-right: 8px;"></i> <strong>SIUS program (ISSF)</strong></td>
+                        <td>Certificirani korisnik</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-file-excel" style="color: #217346; margin-right: 8px;"></i> Napredni Excel</td>
+                        <td>Ekspert</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-mobile-alt" style="color: #02569B; margin-right: 8px;"></i> Dart & Flutter razvoj</td>
+                        <td>U učenju</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-html5" style="color: #E34F26; margin-right: 8px;"></i> HTML5 & CSS3</td>
+                        <td>Osnovni nivo</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
         <section id="contact">
             <h2>Kontaktiraj me</h2>
             <form action="https://formspree.io/f/xeenvdbo" method="POST">
-                <insput type="hidden" name="_next" value="https://harismili.github.io/ime-repozitorija/success.html">
+                <input type="hidden" name="_next" value="https://harismili.github.io/portfolio/success.html">
                 <label for="name">Ime i Prezime:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -99,5 +109,10 @@
         <p>&copy; 2026 Moj Portfolio</p>
     </footer>
 
+    <button id="scroll-to-top" type="button" aria-label="Vrati se na vrh stranice">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
