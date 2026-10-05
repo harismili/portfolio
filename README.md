@@ -11,16 +11,25 @@ Ovaj repozitorij sadrži izvorni kod za moju ličnu web stranicu. Stranica je na
 
 Stranica služi kao interaktivni CV i centralno mjesto za prikaz mojih tehničkih vještina, certifikata i aktivnih softverskih rješenja.
 
-## 💻 Izdvojeni projekat: LED Scoreboard by HM
-Kao ključni projekat na portfoliju izdvajam razvoj kros-platformskog softvera za dvoranske sportove.
-* **Namjena:** Upravljanje i prikaz rezultata u realnom vremenu.
+## 💻 Projekti
+
+### LED Scoreboard by HM (v1.2.0-beta.1)
+Aplikacija za upravljanje sportskim semaforima u dvoranama, razvija se kao diplomski rad.
+* **Namjena:** Upravljanje i prikaz rezultata u realnom vremenu na LED panelu (odbojka, košarka, rukomet, futsal).
 * **Platforme:** Windows & Android.
-* **Tehnologije:** Dart & Flutter.
-* **Tehnički detalji (v0.2.0-alpha):** Arhitektura se oslanja na WebSockets za brzu i stabilnu komunikaciju između operatera i displeja.
+* **Tehnologije:** Dart & Flutter, WebSockets.
+* **Istaknuto:** turniri s PDF izvozom, više operatera istovremeno, licenciranje vezano za uređaj.
+
+### Obilazak (u produkciji)
+Sistem za evidenciju obilazaka parkinga za javno preduzeće u Sarajevu.
+* **Namjena:** Radnici se čekiraju NFC tagom, rukovodilac prati obilaske i upozorenja na web panelu.
+* **Platforme:** Android & Web.
+* **Tehnologije:** Kotlin & Jetpack Compose, TypeScript & React, Firebase.
 
 ## 🛠️ Vještine i certifikati
 Kroz svoje studiranje i rad, razvijam ekspertizu u sljedećim oblastima:
-* **Razvoj interfejsa i aplikacija:** HTML5, CSS3, Dart, Flutter
+* **Razvoj interfejsa i aplikacija:** HTML5, CSS3, Dart, Flutter, Kotlin, TypeScript, React
+* **Backend i cloud:** Firebase (Firestore, Cloud Functions, Auth)
 * **Analiza podataka:** Napredni Microsoft Excel (ekspertiza u složenim logičkim funkcijama i ugniježđenim IFS formulama)
 * **Sportsko mjerenje:** Certificirani korisnik SIUS programa (ISSF)
 

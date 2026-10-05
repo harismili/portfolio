@@ -13,6 +13,14 @@ html {
     --input-bg: #ffffff;
     --hover-row: #f2e6e6;
     --shadow-color: rgba(0, 0, 0, 0.05);
+    --tag-bg: #f5ebeb;
+    --tag-fg: #800000;
+    --status-dev-bg: #fff1d6;
+    --status-dev-fg: #7a4f00;
+    --status-done-bg: #dcf2e3;
+    --status-done-fg: #1e6b3a;
+    --status-archived-bg: #ececec;
+    --status-archived-fg: #555555;
 }
 
 [data-theme="dark"] {
@@ -26,6 +34,14 @@ html {
     --input-bg: #1f1f1f;
     --hover-row: #3a2a2a;
     --shadow-color: rgba(0, 0, 0, 0.4);
+    --tag-bg: #3a2626;
+    --tag-fg: #f0b4b4;
+    --status-dev-bg: #3d2f12;
+    --status-dev-fg: #f0c36b;
+    --status-done-bg: #173323;
+    --status-done-fg: #7fd69f;
+    --status-archived-bg: #333333;
+    --status-archived-fg: #b5b5b5;
 }
 
 body {
@@ -137,12 +153,123 @@ tbody tr:hover {
     background-color: var(--hover-row);
     transition: 0.3s;
 }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
 .project-item {
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--border-color);
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     background-color: var(--project-bg);
-    margin-top: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px var(--shadow-color);
+}
+
+.project-item p {
+    margin: 0 0 12px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.project-platforms i {
+    color: var(--primary-color);
+    margin-right: 4px;
+}
+
+.project-platforms i:not(:first-child) {
+    margin-left: 10px;
+}
+
+.status {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.status--dev {
+    background: var(--status-dev-bg);
+    color: var(--status-dev-fg);
+}
+
+.status--done {
+    background: var(--status-done-bg);
+    color: var(--status-done-fg);
+}
+
+.status--archived {
+    background: var(--status-archived-bg);
+    color: var(--status-archived-fg);
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+.tech-tags li {
+    background: var(--tag-bg);
+    color: var(--tag-fg);
+    border: 1px solid var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 12px;
+}
+
+.project-highlights {
+    margin: 0 0 15px;
+    padding-left: 20px;
+    font-size: 0.95rem;
+}
+
+.project-highlights li {
+    margin-bottom: 4px;
+}
+
+.project-highlights li::marker {
+    color: var(--primary-color);
+}
+
+.project-item .project-private {
+    margin: auto 0 0;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.project-private i {
+    color: var(--primary-color);
+    margin-right: 4px;
+}
+
+.project-private a {
+    color: var(--primary-color);
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .project-version {
@@ -158,13 +285,8 @@ tbody tr:hover {
 }
 
 .project-item h3 {
-    margin-top: 0;
+    margin: 0;
     color: var(--primary-color);
-}
-
-.project-item i {
-    color: var(--primary-color);
-    margin-right: 5px;
 }
 
 table i {
@@ -232,7 +354,7 @@ nav ul li #theme-toggle {
 /* Stil za GitHub dugme */
 .btn-github {
     display: inline-block;
-    background-color: #800000; /* maroon */
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -243,7 +365,7 @@ nav ul li #theme-toggle {
 }
 
 .btn-github:hover {
-    background-color: #a00000; /* Svjetlija maroon na hover */
+    background-color: var(--accent-color);
     transform: translateY(-2px); /* Animacija prema gore */
     color: white;
 }
@@ -271,7 +393,7 @@ nav ul li #theme-toggle {
     width: 100%;
     padding: 12px;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     font-family: inherit;
 }
@@ -280,4 +402,33 @@ nav ul li #theme-toggle {
     align-self: flex-start; /* Dugme ostaje lijevo */
     padding: 12px 30px;
     width: auto;
+}
+
+/* 9. MOBILNI PRIKAZ */
+@media (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        margin: 20px 16px;
+        padding: 20px;
+    }
+
+    #contact input,
+    #contact textarea {
+        box-sizing: border-box;
+    }
+
+    #scroll-to-top {
+        bottom: 20px;
+        right: 16px;
+    }
 }
