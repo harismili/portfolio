@@ -40,20 +40,63 @@
         </section>
 
         <section id="projects">
-            <h2>Trenutni projekti</h2>
-            <div class="project-item">
-                <h3>LED Scoreboard by HM</h3>
-                <p><strong>Platforme:</strong>
-                    <i class="fab fa-windows"></i> Windows &
-                    <i class="fab fa-android"></i> Android
-                    <span class="project-version">v0.2.0-alpha</span>
-                </p>
-                <p>Kros-platformsko rješenje za dvoranske sportove. Fokus projekta je na preciznom praćenju rezultata u realnom vremenu, upravljanju sportskim događajima i optimizaciji prikaza za različite tipove ekrana.</p>
-                <p><strong>Arhitektura:</strong> oslanja se na WebSockets za brzu i stabilnu komunikaciju između operaterskog uređaja i displeja.</p>
-                <p><em>Tehnologije: Dart & Flutter, WebSockets</em></p>
-                <a href="https://github.com/harismili" target="_blank" class="btn-github">
-                    <i class="fab fa-github"></i> Pogledaj na GitHub-u
-                </a>
+            <h2>Projekti</h2>
+            <div class="projects-grid">
+                <article class="project-item">
+                    <div class="project-header">
+                        <h3>LED Scoreboard by HM</h3>
+                        <span class="status status--dev">Beta</span>
+                    </div>
+                    <p class="project-platforms">
+                        <i class="fab fa-windows"></i> Windows
+                        <i class="fab fa-android"></i> Android
+                        <span class="project-version">v1.2.0-beta.1</span>
+                    </p>
+                    <p>Aplikacija za upravljanje sportskim semaforima u dvoranama. Operater upravlja mečom s telefona ili računara, a rezultat se u realnom vremenu prikazuje na LED panelu povezanom preko HDMI-ja. Razvija se kao diplomski rad.</p>
+                    <ul class="project-highlights">
+                        <li>Odbojka, košarka, rukomet i futsal po zvaničnim pravilima (FIVB, FIBA, IHF, FIFA), plus Free Mode</li>
+                        <li>Turniri (liga, kup, playoff) s automatskim rasporedom, tabelom i PDF izvozom</li>
+                        <li>WebSocket server sa autoritativnim stanjem, više operatera istovremeno i povezivanje QR kodom</li>
+                        <li>Licenciranje vezano za uređaj (HMAC-SHA256) i Windows installer</li>
+                    </ul>
+                    <ul class="tech-tags" aria-label="Tehnologije">
+                        <li>Dart</li>
+                        <li>Flutter</li>
+                        <li>WebSockets</li>
+                        <li>Inno Setup</li>
+                    </ul>
+                    <p class="project-private">
+                        <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                    </p>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-header">
+                        <h3>Obilazak</h3>
+                        <span class="status status--done">U produkciji</span>
+                    </div>
+                    <p class="project-platforms">
+                        <i class="fab fa-android"></i> Android
+                        <i class="fas fa-globe"></i> Web
+                    </p>
+                    <p>Sistem za evidenciju obilazaka parkinga za javno preduzeće u Sarajevu. Radnici se čekiraju NFC tagom na službenom telefonu, a rukovodilac prati obilaske, upozorenja i izvještaje na web panelu.</p>
+                    <ul class="project-highlights">
+                        <li>NFC i GPS čekiranje koje radi i bez signala</li>
+                        <li>Serverska validacija čekiranja i provjera propuštenih obilazaka svakih 5 minuta, uz push upozorenja</li>
+                        <li>Web panel: pregled uživo, vremenska linija dana, mjesečni izvještaji i izvoz u Excel</li>
+                        <li>Sigurnosna pravila baze pokrivena testovima, PIN-ovi hashirani (scrypt)</li>
+                    </ul>
+                    <ul class="tech-tags" aria-label="Tehnologije">
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Firebase</li>
+                    </ul>
+                    <p class="project-private">
+                        <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                    </p>
+                </article>
             </div>
         </section>
 
@@ -77,7 +120,19 @@
                     </tr>
                     <tr>
                         <td><i class="fas fa-mobile-alt" style="color: #02569B; margin-right: 8px;"></i> Dart & Flutter razvoj</td>
-                        <td>U učenju</td>
+                        <td>Napredni nivo</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-android" style="color: #3DDC84; margin-right: 8px;"></i> Kotlin & Jetpack Compose</td>
+                        <td>Srednji nivo</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-react" style="color: #149ECA; margin-right: 8px;"></i> TypeScript & React</td>
+                        <td>Srednji nivo</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-fire" style="color: #F57C00; margin-right: 8px;"></i> Firebase (Firestore, Cloud Functions, Auth)</td>
+                        <td>Srednji nivo</td>
                     </tr>
                     <tr>
                         <td><i class="fab fa-html5" style="color: #E34F26; margin-right: 8px;"></i> HTML5 & CSS3</td>
