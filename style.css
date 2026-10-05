@@ -101,6 +101,107 @@ h1, h2 {
     color: var(--primary-color);
 }
 
+/* HERO */
+section.hero {
+    max-width: 775px; /* ista ukupna širina kao ostale sekcije: 800 + 2×30 + 5 − 2×45 */
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 45px;
+    border-left: none;
+    border-top: 5px solid var(--primary-color);
+    background: linear-gradient(135deg, var(--section-bg) 55%, var(--tag-bg));
+}
+
+.hero-photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 0 0 8px var(--tag-bg), 0 12px 30px var(--shadow-color);
+}
+
+.hero-text h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.hero-text p {
+    margin: 0 0 14px;
+}
+
+.hero-eyebrow {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.hero-tagline {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.hero-actions a {
+    margin-top: 0;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline i,
+.hero-actions .btn-github i {
+    margin-right: 8px;
+}
+
+@media (max-width: 700px) {
+    section.hero {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        gap: 24px;
+        padding: 30px 20px;
+    }
+
+    .hero-photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
 /* 5. TABELA */
 table {
     width: 100%;
