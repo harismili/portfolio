@@ -157,6 +157,14 @@ section.hero {
     margin-top: 0;
 }
 
+.hero-actions .btn-github {
+    padding: 10px 16px;
+}
+
+.hero-actions .btn-outline {
+    padding: 8px 14px;
+}
+
 .btn-outline {
     display: inline-block;
     padding: 8px 20px;
