@@ -481,6 +481,21 @@ nav ul li #theme-toggle {
     align-items: flex-start; /* Sve poravnato ulijevo */
 }
 
+.contact-direct {
+    margin: 0 0 20px;
+}
+
+.contact-direct i {
+    color: var(--primary-color);
+    margin-right: 6px;
+}
+
+.contact-direct a {
+    color: var(--primary-color);
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
 #contact form {
     display: flex;
     flex-direction: column; /* Elementi forme jedan ispod drugog */
