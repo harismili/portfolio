@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Haris Milavica</title>
-    <meta name="description" content="Portfolio Harisa Milavice, studenta inžinjerske informatike. Projekti u Flutteru, Kotlinu i Reactu: LED Scoreboard i sistem za evidenciju obilazaka.">
+    <meta name="description" content="Portfolio Harisa Milavice, studenta inžinjerske informatike. Projekti u Flutteru, Kotlinu i Reactu: LED Scoreboard, NetCam Toolkit, Fazor i sistem za evidenciju obilazaka.">
     <link rel="canonical" href="https://harismili.github.io/portfolio/">
 
     <meta property="og:type" content="website">
@@ -31,6 +31,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#800000">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -39,6 +41,7 @@
             <ul>
                 <li><a href="#about">O meni</a></li>
                 <li><a href="#projects">Projekti</a></li>
+                <li><a href="#experience">Iskustvo</a></li>
                 <li><a href="#skills">Vještine</a></li>
                 <li><a href="#contact">Kontakt</a></li>
                 <li><a href="https://github.com/harismili" target="_blank" aria-label="Moj GitHub profil"><i class="fab fa-github"></i></a></li>
@@ -59,7 +62,7 @@
                 <p class="hero-eyebrow">Student inžinjerske informatike</p>
                 <h1>Zdravo, ja sam Haris Milavica</h1>
                 <p class="hero-tagline">Razvijam cross-platform aplikacije u Flutteru, Android aplikacije u Kotlinu i web panele u Reactu.</p>
-                <p>Student sam Fakulteta za tehničke studije, smjer Inžinjerska informatika. Posvećen sam izučavanju softverskog inžinjerstva, analizi podataka i primjeni modernih tehnologija u rješavanju praktičnih problema.</p>
+                <p>Student sam Fakulteta za tehničke studije, smjer Inžinjerska informatika. Prije toga sam više od sedam godina radio kao mašinski tehničar u proizvodnji i održavanju, pa softver razvijam za stvarne potrebe na terenu.</p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn-github">
                         <i class="fas fa-folder-open"></i> Pogledaj projekte
@@ -78,31 +81,92 @@
             <h2>Projekti</h2>
             <div class="projects-grid">
                 <article class="project-item">
+                    <div class="project-media" data-gallery>
+                        <a href="images/projects/led-arena-basketball.webp" class="project-cover" aria-haspopup="dialog" data-caption="LED prikaz Arena: košarka sa Shot Clockom">
+                            <img src="images/projects/led-cover.webp" alt="LED prikaz košarkaške utakmice u aplikaciji LED Scoreboard" width="800" height="450" loading="lazy">
+                            <span class="project-cover-count"><i class="fas fa-images"></i> 5 slika</span>
+                        </a>
+                        <a href="images/projects/led-main-menu.webp" data-caption="Početni ekran: brzi start sporta, način rada i turniri" hidden></a>
+                        <a href="images/projects/led-futsal-operator.webp" data-caption="Ekran operatera (futsal) s pregledom displeja uživo" hidden></a>
+                        <a href="images/projects/led-arena-volleyball.webp" data-caption="LED prikaz Arena: odbojka" hidden></a>
+                        <a href="images/projects/led-shot-clock.webp" data-caption="Shot Clock displej za panele iznad koševa" hidden></a>
+                    </div>
                     <div class="project-header">
-                        <h3>LED Scoreboard by HM</h3>
-                        <span class="status status--dev">Beta</span>
+                        <h3>LED Scoreboard</h3>
+                        <span class="status status--done">Stabilno</span>
                     </div>
                     <p class="project-platforms">
                         <i class="fab fa-windows"></i> Windows
                         <i class="fab fa-android"></i> Android
-                        <span class="project-version">v1.2.0-beta.1</span>
+                        <span class="project-version">v2.0.0</span>
                     </p>
                     <p>Aplikacija za upravljanje sportskim semaforima u dvoranama. Operater upravlja mečom s telefona ili računara, a rezultat se u realnom vremenu prikazuje na LED panelu povezanom preko HDMI-ja. Razvija se kao diplomski rad.</p>
                     <ul class="project-highlights">
-                        <li>Odbojka, košarka, rukomet i futsal po zvaničnim pravilima (FIVB, FIBA, IHF, FIFA), plus Free Mode</li>
-                        <li>Turniri (liga, kup, playoff) s automatskim rasporedom, tabelom i PDF izvozom</li>
+                        <li>Odbojka, košarka, rukomet i futsal po zvaničnim pravilima (FIVB, FIBA, IHF, FIFA), plus slobodni režim</li>
                         <li>WebSocket server sa autoritativnim stanjem, više operatera istovremeno i povezivanje QR kodom</li>
-                        <li>Licenciranje vezano za uređaj (HMAC-SHA256) i Windows installer</li>
+                        <li>Turniri (liga, kup, grupe + playoff), i na više terena istovremeno preko master računara</li>
+                        <li>Rezultat odbojke uživo iz e-Scoresheeta zapisničara, OBS overlay za live stream i PDF zapisnik utakmice</li>
+                        <li>Licenciranje vezano za uređaj (HMAC-SHA256), Windows installer i 164 automatska testa</li>
                     </ul>
                     <ul class="tech-tags" aria-label="Tehnologije">
                         <li>Dart</li>
                         <li>Flutter</li>
                         <li>WebSockets</li>
+                        <li>PDF</li>
                         <li>Inno Setup</li>
                     </ul>
-                    <p class="project-private">
-                        <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                    <div class="project-footer">
+                        <a href="https://github.com/harismili/led-scoreboard-releases/releases/latest" target="_blank" rel="noopener" class="btn-outline btn-small">
+                            <i class="fas fa-download"></i> Preuzmi za Windows i Android
+                        </a>
+                        <p class="project-private">
+                            <i class="fas fa-lock"></i> Izvorni kod je privatan, a za korištenje je potrebna licenca. <a href="#contact">Kontaktiraj me</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-media" data-gallery>
+                        <a href="images/projects/netcam-feature.webp" class="project-cover" aria-haspopup="dialog" data-caption="NetCam Toolkit: CCTV kalkulator i mrežni skener">
+                            <img src="images/projects/netcam-cover.webp" alt="NetCam Toolkit, CCTV kalkulator i mrežni skener" width="800" height="450" loading="lazy">
+                            <span class="project-cover-count"><i class="fas fa-images"></i> 7 slika</span>
+                        </a>
+                        <a href="images/projects/netcam-kalkulatori.webp" data-caption="Lista kalkulatora" hidden></a>
+                        <a href="images/projects/netcam-disk.webp" data-caption="Prostor na disku i dani snimanja" hidden></a>
+                        <a href="images/projects/netcam-dori.webp" data-caption="Objektiv i DORI udaljenosti" hidden></a>
+                        <a href="images/projects/netcam-mreza.webp" data-caption="Mrežni alati" hidden></a>
+                        <a href="images/projects/netcam-rtsp.webp" data-caption="Generator RTSP adresa (lozinka se ne čuva)" hidden></a>
+                        <a href="images/projects/netcam-projekat.webp" data-caption="Projekat klijenta s PDF izvještajem" hidden></a>
+                    </div>
+                    <div class="project-header">
+                        <h3>NetCam Toolkit</h3>
+                        <span class="status status--dev">Zatvoreni test</span>
+                    </div>
+                    <p class="project-platforms">
+                        <i class="fab fa-android"></i> Android
+                        <span class="project-version">v0.10.0</span>
                     </p>
+                    <p>Android aplikacija za instalatere video nadzora, alarma i mreža: kalkulatori za projektovanje CCTV sistema i mrežni alati za teren. Kalkulatori rade bez interneta, na bosanskom i engleskom. Trenutno u zatvorenom testu na Google Playu.</p>
+                    <ul class="project-highlights">
+                        <li>Sedam kalkulatora: prostor na disku, PoE budžet, pad napona, napajanje, objektiv i DORI, UPS i subnet</li>
+                        <li>LAN skener koji prepoznaje uređaje po otvorenim portovima i HTTP odgovorima, ping i provjera portova</li>
+                        <li>ONVIF otkrivanje kamera (WS-Discovery) i generator RTSP adresa za Hikvision i Dahua</li>
+                        <li>Projekti klijenata sa sačuvanim proračunima i PDF izvještajem</li>
+                        <li>Pro funkcije se otključavaju nagrađivanom reklamom (AdMob), jer naplata preko Google Playa nije dostupna iz BiH</li>
+                    </ul>
+                    <ul class="tech-tags" aria-label="Tehnologije">
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>Hilt</li>
+                        <li>Room</li>
+                        <li>Coroutines</li>
+                        <li>AdMob</li>
+                    </ul>
+                    <div class="project-footer">
+                        <p class="project-private">
+                            <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                        </p>
+                    </div>
                 </article>
 
                 <article class="project-item">
@@ -128,53 +192,151 @@
                         <li>React</li>
                         <li>Firebase</li>
                     </ul>
-                    <p class="project-private">
-                        <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
-                    </p>
+                    <div class="project-footer">
+                        <p class="project-private">
+                            <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                        </p>
+                    </div>
                 </article>
+
+                <article class="project-item">
+                    <div class="project-header">
+                        <h3>Fazor</h3>
+                        <span class="status status--dev">U razvoju</span>
+                    </div>
+                    <p class="project-platforms">
+                        <i class="fab fa-android"></i> Android
+                    </p>
+                    <p>Android aplikacija za električare i elektroinstalatere. Korisnik ne crta šemu: unese razvodnu tablu kao listu strujnih krugova, a aplikacija sve izračuna i provjeri, pa sama nacrta jednopolnu šemu, sastavnicu i raspored u ormaru.</p>
+                    <ul class="project-highlights">
+                        <li>Gotovo: kalkulatori snage i struje, Ohmovog zakona i troška struje, s unit testovima</li>
+                        <li>Slijedi: pad napona, presjek kabla po tabeli dozvoljenih struja i izbor osigurača</li>
+                        <li>Cilj: automatske provjere table i jednopolna šema u PDF-u i DXF-u, po evropskim IEC normama</li>
+                        <li>Sva logika u zasebnom Kotlin modulu bez Android zavisnosti, s vlastitim crtanjem šeme umjesto CAD i PDF biblioteka</li>
+                    </ul>
+                    <ul class="tech-tags" aria-label="Tehnologije">
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>Hilt</li>
+                    </ul>
+                    <div class="project-footer">
+                        <p class="project-private">
+                            <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="publisher">
+                <a href="https://hmcode.ba" target="_blank" rel="noopener" class="publisher-logo">
+                    <img src="images/hmcode/hmcode-lockup.svg" alt="HMCode" width="139" height="40" class="only-light">
+                    <img src="images/hmcode/hmcode-lockup-on-dark.svg" alt="HMCode" width="139" height="40" class="only-dark">
+                </a>
+                <p>LED Scoreboard, NetCam Toolkit i Fazor objavljujem pod imenom <strong>HMCode</strong>, Sarajevo.<br>
+                    <a href="https://hmcode.ba" target="_blank" rel="noopener">hmcode.ba</a> · <a href="mailto:podrska@hmcode.ba">podrska@hmcode.ba</a>
+                </p>
             </div>
         </section>
 
+        <section id="experience">
+            <h2>Iskustvo i obrazovanje</h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <p class="timeline-date">2025 – danas</p>
+                    <h3>Inžinjerska informatika</h3>
+                    <p class="timeline-place">Fakultet za tehničke studije</p>
+                </li>
+                <li class="timeline-item">
+                    <p class="timeline-date">2019 – 2024, 2025 – danas</p>
+                    <h3>Mašinski tehničar, rukovodilac kotlovskog postrojenja</h3>
+                    <p class="timeline-place">JP „ONSA“ d.o.o. Sarajevo</p>
+                    <ul>
+                        <li>Vođenje kotlovskog postrojenja i održavanje elektroinstalacija visokog i niskog napona</li>
+                        <li>Održavanje sistema za naplatu parkinga i sportske dvorane s pratećom infrastrukturom</li>
+                        <li>Raspoređivanje radnih aktivnosti i smjena tima održavanja u koordinaciji s menadžmentom</li>
+                    </ul>
+                </li>
+                <li class="timeline-item">
+                    <p class="timeline-date">2017 – 2019</p>
+                    <h3>Mašinski tehničar</h3>
+                    <p class="timeline-place">NIS Pretis d.d. Vogošća</p>
+                    <ul>
+                        <li>Rad na CNC mašinama za mehaničku obradu te na hidrauličnim i mehaničkim presama za kovanje</li>
+                        <li>Učešće u većini faza proizvodnje, od poluproizvoda do gotovog proizvoda</li>
+                    </ul>
+                </li>
+                <li class="timeline-item">
+                    <p class="timeline-date">2008 – 2012</p>
+                    <h3>Mašinski tehničar (SSS, IV stepen)</h3>
+                    <p class="timeline-place">Srednjoškolski centar Vogošća</p>
+                </li>
+            </ol>
+        </section>
+
         <section id="skills">
-            <h2>Tehničke vještine i Certifikati</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Vještina / Program</th>
-                        <th>Opis / Nivo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><i class="fas fa-certificate" style="color: #800000; margin-right: 8px;"></i> <strong>SIUS program (ISSF)</strong></td>
-                        <td>Certificirani korisnik</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-file-excel" style="color: #217346; margin-right: 8px;"></i> Napredni Excel</td>
-                        <td>Ekspert</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-mobile-alt" style="color: #02569B; margin-right: 8px;"></i> Dart & Flutter razvoj</td>
-                        <td>Napredni nivo</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fab fa-android" style="color: #3DDC84; margin-right: 8px;"></i> Kotlin & Jetpack Compose</td>
-                        <td>Srednji nivo</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fab fa-react" style="color: #149ECA; margin-right: 8px;"></i> TypeScript & React</td>
-                        <td>Srednji nivo</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-fire" style="color: #F57C00; margin-right: 8px;"></i> Firebase (Firestore, Cloud Functions, Auth)</td>
-                        <td>Srednji nivo</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fab fa-html5" style="color: #E34F26; margin-right: 8px;"></i> HTML5 & CSS3</td>
-                        <td>Osnovni nivo</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2>Vještine</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3><i class="fas fa-mobile-screen"></i> Mobilne i desktop aplikacije</h3>
+                    <ul class="tech-tags">
+                        <li>Dart &amp; Flutter (napredno)</li>
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>Hilt</li>
+                        <li>Room</li>
+                        <li>Coroutines &amp; Flow</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3><i class="fas fa-globe"></i> Web</h3>
+                    <ul class="tech-tags">
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Vite</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3><i class="fas fa-server"></i> Backend i mreža</h3>
+                    <ul class="tech-tags">
+                        <li>Firebase (Firestore, Cloud Functions, Auth, FCM)</li>
+                        <li>Node.js</li>
+                        <li>WebSockets</li>
+                        <li>TCP/UDP i multicast</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3><i class="fas fa-vial-circle-check"></i> Testiranje</h3>
+                    <ul class="tech-tags">
+                        <li>flutter_test (unit, widget, golden)</li>
+                        <li>JUnit</li>
+                        <li>Vitest</li>
+                        <li>Testovi Firestore pravila</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3><i class="fas fa-rocket"></i> Objava i alati</h3>
+                    <ul class="tech-tags">
+                        <li>Git &amp; GitHub</li>
+                        <li>Google Play Console</li>
+                        <li>AdMob &amp; UMP</li>
+                        <li>Inno Setup</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3><i class="fas fa-file-excel"></i> Analiza podataka</h3>
+                    <ul class="tech-tags">
+                        <li>Microsoft Excel (napredno: složene logičke i ugniježđene IFS formule)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="subsection-title">Certifikati i jezici</h2>
+            <ul class="cert-list">
+                <li><i class="fas fa-certificate"></i> Certificirani korisnik SIUS sistema za elektronsko mjerenje rezultata (ISSF)</li>
+                <li><i class="fas fa-certificate"></i> Uvjerenje za sigurno rukovanje kotlovskim postrojenjima</li>
+                <li><i class="fas fa-language"></i> Bosanski (maternji), engleski (B2)</li>
+            </ul>
         </section>
 
         <section id="contact">
@@ -186,14 +348,15 @@
             </p>
             <form action="https://formspree.io/f/xeenvdbo" method="POST">
                 <input type="hidden" name="_next" value="https://harismili.github.io/portfolio/success.html">
+                <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <label for="name">Ime i Prezime:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" autocomplete="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" autocomplete="email" required>
 
                 <label for="message">Poruka:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Pošalji</button>
             </form>
@@ -201,13 +364,25 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Moj Portfolio</p>
+        <p>&copy; 2026 Haris Milavica</p>
+        <a href="https://hmcode.ba" target="_blank" rel="noopener">
+            <img src="images/hmcode/coded-by-hmcode.svg" alt="coded by hm/code" width="197" height="44">
+        </a>
     </footer>
+
+    <dialog id="lightbox" aria-label="Galerija slika">
+        <p class="lightbox-counter"></p>
+        <figure>
+            <img alt="">
+            <figcaption></figcaption>
+        </figure>
+        <button type="button" class="lightbox-prev" aria-label="Prethodna slika"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="lightbox-next" aria-label="Sljedeća slika"><i class="fas fa-chevron-right"></i></button>
+        <button type="button" class="lightbox-close" aria-label="Zatvori galeriju" autofocus><i class="fas fa-xmark"></i></button>
+    </dialog>
 
     <button id="scroll-to-top" type="button" aria-label="Vrati se na vrh stranice">
         <i class="fas fa-arrow-up"></i>
     </button>
-
-    <script src="script.js"></script>
 </body>
 </html>

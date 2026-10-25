@@ -13,12 +13,15 @@ Stranica služi kao interaktivni CV i centralno mjesto za prikaz mojih tehnički
 
 ## 💻 Projekti
 
-### LED Scoreboard by HM (v1.2.0-beta.1)
+LED Scoreboard, NetCam Toolkit i Fazor objavljujem pod imenom **HMCode** ([hmcode.ba](https://hmcode.ba)).
+
+### LED Scoreboard (v2.0.0, stabilno)
 Aplikacija za upravljanje sportskim semaforima u dvoranama, razvija se kao diplomski rad.
 * **Namjena:** Upravljanje i prikaz rezultata u realnom vremenu na LED panelu (odbojka, košarka, rukomet, futsal).
 * **Platforme:** Windows & Android.
 * **Tehnologije:** Dart & Flutter, WebSockets.
-* **Istaknuto:** turniri s PDF izvozom, više operatera istovremeno, licenciranje vezano za uređaj.
+* **Istaknuto:** turniri na više terena s PDF izvozom, više operatera istovremeno, rezultat iz e-Scoresheeta, OBS overlay, licenciranje vezano za uređaj.
+* **Preuzimanje:** [instalacije za Windows i Android](https://github.com/harismili/led-scoreboard-releases/releases/latest) (potrebna je licenca).
 
 ### Obilazak (u produkciji)
 Sistem za evidenciju obilazaka parkinga za javno preduzeće u Sarajevu.
@@ -26,12 +29,28 @@ Sistem za evidenciju obilazaka parkinga za javno preduzeće u Sarajevu.
 * **Platforme:** Android & Web.
 * **Tehnologije:** Kotlin & Jetpack Compose, TypeScript & React, Firebase.
 
+### NetCam Toolkit (v0.10.0, zatvoreni test)
+Android aplikacija za instalatere video nadzora, alarma i mreža.
+* **Namjena:** Kalkulatori za projektovanje CCTV sistema (disk, PoE, pad napona, napajanje, DORI, UPS, subnet) i mrežni alati za teren.
+* **Platforme:** Android (Google Play, zatvoreni test).
+* **Tehnologije:** Kotlin & Jetpack Compose, Hilt, Room, Coroutines, AdMob.
+* **Istaknuto:** LAN skener s prepoznavanjem uređaja, ONVIF otkrivanje, RTSP generator, PDF izvještaj projekta.
+
+### Fazor (u razvoju)
+Android aplikacija za električare: od liste strujnih krugova sama pravi jednopolnu šemu, sastavnicu i raspored u ormaru.
+* **Platforme:** Android.
+* **Tehnologije:** Kotlin & Jetpack Compose, Hilt, čisti Kotlin modul za proračune i crtanje šeme.
+* **Stanje:** gotovi prvi kalkulatori (snaga i struja, Ohmov zakon, trošak struje) s testovima.
+
 ## 🛠️ Vještine i certifikati
 Kroz svoje studiranje i rad, razvijam ekspertizu u sljedećim oblastima:
-* **Razvoj interfejsa i aplikacija:** HTML5, CSS3, Dart, Flutter, Kotlin, TypeScript, React
-* **Backend i cloud:** Firebase (Firestore, Cloud Functions, Auth)
+* **Mobilne i desktop aplikacije:** Dart & Flutter (napredno), Kotlin, Jetpack Compose, Hilt, Room, Coroutines & Flow
+* **Web:** TypeScript, React, Vite, HTML & CSS, JavaScript
+* **Backend i mreža:** Firebase (Firestore, Cloud Functions, Auth, FCM), Node.js, WebSockets, TCP/UDP i multicast
+* **Testiranje:** flutter_test (unit, widget, golden), JUnit, Vitest, testovi Firestore pravila
+* **Objava i alati:** Git & GitHub, Google Play Console, AdMob & UMP, Inno Setup
 * **Analiza podataka:** Napredni Microsoft Excel (ekspertiza u složenim logičkim funkcijama i ugniježđenim IFS formulama)
-* **Sportsko mjerenje:** Certificirani korisnik SIUS programa (ISSF)
+* **Certifikati:** Certificirani korisnik SIUS sistema (ISSF), uvjerenje za sigurno rukovanje kotlovskim postrojenjima
 
 ## ⚙️ Kako pokrenuti lokalno
 Ako želite pregledati kod lokalno na svom računaru:
