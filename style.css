@@ -821,6 +821,11 @@ nav ul li #theme-toggle {
     font-family: inherit;
 }
 
+/* Polje za botove (Formspree _gotcha): ljudi ga ne vide i ne popunjavaju */
+#contact .form-honeypot {
+    display: none;
+}
+
 #contact button {
     align-self: flex-start; /* Dugme ostaje lijevo */
     padding: 12px 30px;

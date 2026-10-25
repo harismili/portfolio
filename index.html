@@ -31,6 +31,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#800000">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -346,14 +348,15 @@
             </p>
             <form action="https://formspree.io/f/xeenvdbo" method="POST">
                 <input type="hidden" name="_next" value="https://harismili.github.io/portfolio/success.html">
+                <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <label for="name">Ime i Prezime:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" autocomplete="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" autocomplete="email" required>
 
                 <label for="message">Poruka:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Pošalji</button>
             </form>
@@ -381,7 +384,5 @@
     <button id="scroll-to-top" type="button" aria-label="Vrati se na vrh stranice">
         <i class="fas fa-arrow-up"></i>
     </button>
-
-    <script src="script.js"></script>
 </body>
 </html>
