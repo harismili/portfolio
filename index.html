@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Haris Milavica</title>
-    <meta name="description" content="Portfolio Harisa Milavice, studenta inžinjerske informatike. Projekti u Flutteru, Kotlinu i Reactu: LED Scoreboard i sistem za evidenciju obilazaka.">
+    <meta name="description" content="Portfolio Harisa Milavice, studenta inžinjerske informatike. Projekti u Flutteru, Kotlinu i Reactu: LED Scoreboard, NetCam Toolkit, Fazor i sistem za evidenciju obilazaka.">
     <link rel="canonical" href="https://harismili.github.io/portfolio/">
 
     <meta property="og:type" content="website">
@@ -114,6 +114,38 @@
 
                 <article class="project-item">
                     <div class="project-header">
+                        <h3>NetCam Toolkit</h3>
+                        <span class="status status--dev">Zatvoreni test</span>
+                    </div>
+                    <p class="project-platforms">
+                        <i class="fab fa-android"></i> Android
+                        <span class="project-version">v0.10.0</span>
+                    </p>
+                    <p>Android aplikacija za instalatere video nadzora, alarma i mreža: kalkulatori za projektovanje CCTV sistema i mrežni alati za teren. Kalkulatori rade bez interneta, na bosanskom i engleskom. Trenutno u zatvorenom testu na Google Playu.</p>
+                    <ul class="project-highlights">
+                        <li>Sedam kalkulatora: prostor na disku, PoE budžet, pad napona, napajanje, objektiv i DORI, UPS i subnet</li>
+                        <li>LAN skener koji prepoznaje uređaje po otvorenim portovima i HTTP odgovorima, ping i provjera portova</li>
+                        <li>ONVIF otkrivanje kamera (WS-Discovery) i generator RTSP adresa za Hikvision i Dahua</li>
+                        <li>Projekti klijenata sa sačuvanim proračunima i PDF izvještajem</li>
+                        <li>Pro funkcije se otključavaju nagrađivanom reklamom (AdMob), jer naplata preko Google Playa nije dostupna iz BiH</li>
+                    </ul>
+                    <ul class="tech-tags" aria-label="Tehnologije">
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>Hilt</li>
+                        <li>Room</li>
+                        <li>Coroutines</li>
+                        <li>AdMob</li>
+                    </ul>
+                    <div class="project-footer">
+                        <p class="project-private">
+                            <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-header">
                         <h3>Obilazak</h3>
                         <span class="status status--done">U produkciji</span>
                     </div>
@@ -134,6 +166,33 @@
                         <li>TypeScript</li>
                         <li>React</li>
                         <li>Firebase</li>
+                    </ul>
+                    <div class="project-footer">
+                        <p class="project-private">
+                            <i class="fas fa-lock"></i> Privatni repozitorij, kod dostupan na upit. <a href="#contact">Kontaktiraj me</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-header">
+                        <h3>Fazor</h3>
+                        <span class="status status--dev">U razvoju</span>
+                    </div>
+                    <p class="project-platforms">
+                        <i class="fab fa-android"></i> Android
+                    </p>
+                    <p>Android aplikacija za električare i elektroinstalatere. Korisnik ne crta šemu: unese razvodnu tablu kao listu strujnih krugova, a aplikacija sve izračuna i provjeri, pa sama nacrta jednopolnu šemu, sastavnicu i raspored u ormaru.</p>
+                    <ul class="project-highlights">
+                        <li>Gotovo: kalkulatori snage i struje, Ohmovog zakona i troška struje, s unit testovima</li>
+                        <li>Slijedi: pad napona, presjek kabla po tabeli dozvoljenih struja i izbor osigurača</li>
+                        <li>Cilj: automatske provjere table i jednopolna šema u PDF-u i DXF-u, po evropskim IEC normama</li>
+                        <li>Sva logika u zasebnom Kotlin modulu bez Android zavisnosti, s vlastitim crtanjem šeme umjesto CAD i PDF biblioteka</li>
+                    </ul>
+                    <ul class="tech-tags" aria-label="Tehnologije">
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>Hilt</li>
                     </ul>
                     <div class="project-footer">
                         <p class="project-private">

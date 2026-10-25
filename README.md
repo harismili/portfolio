@@ -27,6 +27,19 @@ Sistem za evidenciju obilazaka parkinga za javno preduzeće u Sarajevu.
 * **Platforme:** Android & Web.
 * **Tehnologije:** Kotlin & Jetpack Compose, TypeScript & React, Firebase.
 
+### NetCam Toolkit (v0.10.0, zatvoreni test)
+Android aplikacija za instalatere video nadzora, alarma i mreža.
+* **Namjena:** Kalkulatori za projektovanje CCTV sistema (disk, PoE, pad napona, napajanje, DORI, UPS, subnet) i mrežni alati za teren.
+* **Platforme:** Android (Google Play, zatvoreni test).
+* **Tehnologije:** Kotlin & Jetpack Compose, Hilt, Room, Coroutines, AdMob.
+* **Istaknuto:** LAN skener s prepoznavanjem uređaja, ONVIF otkrivanje, RTSP generator, PDF izvještaj projekta.
+
+### Fazor (u razvoju)
+Android aplikacija za električare: od liste strujnih krugova sama pravi jednopolnu šemu, sastavnicu i raspored u ormaru.
+* **Platforme:** Android.
+* **Tehnologije:** Kotlin & Jetpack Compose, Hilt, čisti Kotlin modul za proračune i crtanje šeme.
+* **Stanje:** gotovi prvi kalkulatori (snaga i struja, Ohmov zakon, trošak struje) s testovima.
+
 ## 🛠️ Vještine i certifikati
 Kroz svoje studiranje i rad, razvijam ekspertizu u sljedećim oblastima:
 * **Razvoj interfejsa i aplikacija:** HTML5, CSS3, Dart, Flutter, Kotlin, TypeScript, React
