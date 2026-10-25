@@ -79,6 +79,16 @@
             <h2>Projekti</h2>
             <div class="projects-grid">
                 <article class="project-item">
+                    <div class="project-media" data-gallery>
+                        <a href="images/projects/led-arena-basketball.webp" class="project-cover" aria-haspopup="dialog" data-caption="LED prikaz Arena: košarka sa Shot Clockom">
+                            <img src="images/projects/led-cover.webp" alt="LED prikaz košarkaške utakmice u aplikaciji LED Scoreboard" width="800" height="450" loading="lazy">
+                            <span class="project-cover-count"><i class="fas fa-images"></i> 5 slika</span>
+                        </a>
+                        <a href="images/projects/led-main-menu.webp" data-caption="Početni ekran: brzi start sporta, način rada i turniri" hidden></a>
+                        <a href="images/projects/led-futsal-operator.webp" data-caption="Ekran operatera (futsal) s pregledom displeja uživo" hidden></a>
+                        <a href="images/projects/led-arena-volleyball.webp" data-caption="LED prikaz Arena: odbojka" hidden></a>
+                        <a href="images/projects/led-shot-clock.webp" data-caption="Shot Clock displej za panele iznad koševa" hidden></a>
+                    </div>
                     <div class="project-header">
                         <h3>LED Scoreboard</h3>
                         <span class="status status--done">Stabilno</span>
@@ -114,6 +124,18 @@
                 </article>
 
                 <article class="project-item">
+                    <div class="project-media" data-gallery>
+                        <a href="images/projects/netcam-feature.webp" class="project-cover" aria-haspopup="dialog" data-caption="NetCam Toolkit: CCTV kalkulator i mrežni skener">
+                            <img src="images/projects/netcam-cover.webp" alt="NetCam Toolkit, CCTV kalkulator i mrežni skener" width="800" height="450" loading="lazy">
+                            <span class="project-cover-count"><i class="fas fa-images"></i> 7 slika</span>
+                        </a>
+                        <a href="images/projects/netcam-kalkulatori.webp" data-caption="Lista kalkulatora" hidden></a>
+                        <a href="images/projects/netcam-disk.webp" data-caption="Prostor na disku i dani snimanja" hidden></a>
+                        <a href="images/projects/netcam-dori.webp" data-caption="Objektiv i DORI udaljenosti" hidden></a>
+                        <a href="images/projects/netcam-mreza.webp" data-caption="Mrežni alati" hidden></a>
+                        <a href="images/projects/netcam-rtsp.webp" data-caption="Generator RTSP adresa (lozinka se ne čuva)" hidden></a>
+                        <a href="images/projects/netcam-projekat.webp" data-caption="Projekat klijenta s PDF izvještajem" hidden></a>
+                    </div>
                     <div class="project-header">
                         <h3>NetCam Toolkit</h3>
                         <span class="status status--dev">Zatvoreni test</span>
@@ -319,6 +341,17 @@
             <img src="images/hmcode/coded-by-hmcode.svg" alt="coded by hm/code" width="197" height="44">
         </a>
     </footer>
+
+    <dialog id="lightbox" aria-label="Galerija slika">
+        <p class="lightbox-counter"></p>
+        <figure>
+            <img alt="">
+            <figcaption></figcaption>
+        </figure>
+        <button type="button" class="lightbox-prev" aria-label="Prethodna slika"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="lightbox-next" aria-label="Sljedeća slika"><i class="fas fa-chevron-right"></i></button>
+        <button type="button" class="lightbox-close" aria-label="Zatvori galeriju" autofocus><i class="fas fa-xmark"></i></button>
+    </dialog>
 
     <button id="scroll-to-top" type="button" aria-label="Vrati se na vrh stranice">
         <i class="fas fa-arrow-up"></i>
