@@ -44,10 +44,13 @@ Android aplikacija za električare: od liste strujnih krugova sama pravi jednopo
 
 ## 🛠️ Vještine i certifikati
 Kroz svoje studiranje i rad, razvijam ekspertizu u sljedećim oblastima:
-* **Razvoj interfejsa i aplikacija:** HTML5, CSS3, Dart, Flutter, Kotlin, TypeScript, React
-* **Backend i cloud:** Firebase (Firestore, Cloud Functions, Auth)
+* **Mobilne i desktop aplikacije:** Dart & Flutter (napredno), Kotlin, Jetpack Compose, Hilt, Room, Coroutines & Flow
+* **Web:** TypeScript, React, Vite, HTML & CSS, JavaScript
+* **Backend i mreža:** Firebase (Firestore, Cloud Functions, Auth, FCM), Node.js, WebSockets, TCP/UDP i multicast
+* **Testiranje:** flutter_test (unit, widget, golden), JUnit, Vitest, testovi Firestore pravila
+* **Objava i alati:** Git & GitHub, Google Play Console, AdMob & UMP, Inno Setup
 * **Analiza podataka:** Napredni Microsoft Excel (ekspertiza u složenim logičkim funkcijama i ugniježđenim IFS formulama)
-* **Sportsko mjerenje:** Certificirani korisnik SIUS programa (ISSF)
+* **Certifikati:** Certificirani korisnik SIUS sistema (ISSF), uvjerenje za sigurno rukovanje kotlovskim postrojenjima
 
 ## ⚙️ Kako pokrenuti lokalno
 Ako želite pregledati kod lokalno na svom računaru:
