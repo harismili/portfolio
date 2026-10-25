@@ -13,6 +13,8 @@ Stranica služi kao interaktivni CV i centralno mjesto za prikaz mojih tehnički
 
 ## 💻 Projekti
 
+LED Scoreboard, NetCam Toolkit i Fazor objavljujem pod imenom **HMCode** ([hmcode.ba](https://hmcode.ba)).
+
 ### LED Scoreboard (v2.0.0, stabilno)
 Aplikacija za upravljanje sportskim semaforima u dvoranama, razvija se kao diplomski rad.
 * **Namjena:** Upravljanje i prikaz rezultata u realnom vremenu na LED panelu (odbojka, košarka, rukomet, futsal).

@@ -210,6 +210,63 @@ section.hero {
     }
 }
 
+/* HMCODE (znak i potpis su fajlovi iz hmcode-brand, ne mijenjati im boje) */
+.publisher {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.publisher-logo {
+    display: inline-flex;
+    padding: 10px; /* slobodan prostor oko znaka: 25 % visine */
+}
+
+.publisher p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.publisher p a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.only-dark {
+    display: none;
+}
+
+[data-theme="dark"] .only-light {
+    display: none;
+}
+
+[data-theme="dark"] .only-dark {
+    display: inline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 16px 50px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+footer a {
+    display: inline-flex;
+    padding: 11px; /* slobodan prostor oko potpisa: 25 % visine */
+}
+
 /* ISKUSTVO */
 .timeline {
     list-style: none;
