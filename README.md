@@ -13,12 +13,13 @@ Stranica služi kao interaktivni CV i centralno mjesto za prikaz mojih tehnički
 
 ## 💻 Projekti
 
-### LED Scoreboard by HM (v1.2.0-beta.1)
+### LED Scoreboard (v2.0.0, stabilno)
 Aplikacija za upravljanje sportskim semaforima u dvoranama, razvija se kao diplomski rad.
 * **Namjena:** Upravljanje i prikaz rezultata u realnom vremenu na LED panelu (odbojka, košarka, rukomet, futsal).
 * **Platforme:** Windows & Android.
 * **Tehnologije:** Dart & Flutter, WebSockets.
-* **Istaknuto:** turniri s PDF izvozom, više operatera istovremeno, licenciranje vezano za uređaj.
+* **Istaknuto:** turniri na više terena s PDF izvozom, više operatera istovremeno, rezultat iz e-Scoresheeta, OBS overlay, licenciranje vezano za uređaj.
+* **Preuzimanje:** [instalacije za Windows i Android](https://github.com/harismili/led-scoreboard-releases/releases/latest) (potrebna je licenca).
 
 ### Obilazak (u produkciji)
 Sistem za evidenciju obilazaka parkinga za javno preduzeće u Sarajevu.
